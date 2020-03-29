@@ -1,0 +1,107 @@
+body {
+    font-family: "Roboto", sans-serif;
+    width: 80%;
+    margin: auto;
+}
+
+section > ul {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+section > ul > li {
+    list-style-type: none;
+    width: 50%;
+    margin: 10px 0px;
+}
+
+section > ul > li > div {
+    border: 1px solid #b3b3b3;
+    padding: 20px;
+}
+
+section > ul > li > div > label {
+    display: block;
+    color: #6b6b6b;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.line-trough {
+    text-decoration: line-through;
+}
+
+section > ul > li > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+button {
+    padding: 5px 15px;
+    color: white;
+    margin: 0px 5px;
+    margin-right: 0px;
+}
+
+form > button {
+    background-color: lightskyblue;
+    border: #82c1e8 2px solid;
+}
+
+section > ul > li > div > div > button, .check {
+    background-color: green;
+    border: #008000 2px solid;
+}
+
+section > ul > li > div > div > button, .delete {
+    background-color: red;
+    border: #bb0000 2px solid;
+}
+
+@media (max-width: 700px) {
+    section > ul > li {
+        width: 100%;
+    }
+
+    body {
+        width: 90%;
+    }
+
+    form  > label {
+        display: none;
+    }
+
+    form {
+        display: flex;
+    }
+
+    form > input {
+        flex: 3;
+    }
+
+    form > button {
+        flex: 1;
+    }
+}
+
+@media (min-width: 900px) {
+    form {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    form > label {
+        flex: auto;
+    }
+
+    form > input {
+        flex: auto;
+    }
+
+    form > button {
+        flex: auto;
+    }
+}
