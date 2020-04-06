@@ -22,3 +22,13 @@ main {
     width: 80%;
     margin: auto;
 }
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hide {
+    display: none !important;
+}
